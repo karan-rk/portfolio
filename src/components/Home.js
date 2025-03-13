@@ -3,10 +3,9 @@ import Typewriter from "typewriter-effect";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import profileImg from "../assets/images/propic.png"; // ✅ Your Profile Image
 
-const resumePath = "https://karan-rk.github.io/portfolio/public/KaranRajendraResume.pdf";
-
-const githubResumeURL = "https://raw.githubusercontent.com/karan-rk/portfolio/main/public/KaranRajendraResume.pdf";
-
+// ✅ Corrected Resume Path for GitHub Pages
+const resumePath = "https://karan-rk.github.io/portfolio/KaranRajendraResume.pdf";
+const githubResumeURL = "https://raw.githubusercontent.com/karan-rk/portfolio/main/KaranRajendraResume.pdf";
 
 const Home = () => {
   return (
@@ -79,19 +78,6 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all flex items-center justify-center w-64"
-          onClick={async (e) => {
-            try {
-              const res = await fetch(resumePath, { method: "HEAD" });
-              if (!res.ok) {
-                alert("Resume not found! Trying alternative link...");
-                window.open(githubResumeURL, "_blank");
-                e.preventDefault();
-              }
-            } catch {
-              alert("Error fetching resume.");
-              e.preventDefault();
-            }
-          }}
         >
           📄 View My Resume
         </a>
@@ -101,19 +87,6 @@ const Home = () => {
           href={resumePath}
           download="KaranRajendraResume.pdf"
           className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition-all flex items-center justify-center w-64"
-          onClick={async (e) => {
-            try {
-              const res = await fetch(resumePath, { method: "HEAD" });
-              if (!res.ok) {
-                alert("Resume not found! Downloading from alternative link...");
-                window.location.href = githubResumeURL;
-                e.preventDefault();
-              }
-            } catch {
-              alert("Error downloading resume.");
-              e.preventDefault();
-            }
-          }}
         >
           ⬇️ Download My Resume
         </a>
