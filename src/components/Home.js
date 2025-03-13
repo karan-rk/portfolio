@@ -65,11 +65,12 @@ const Home = () => {
           <FaGithub />
         </a>
         <a
-          href="mailto:notkaranrk@gmail.com"
-          className="text-white text-2xl hover:text-red-400 transition-transform hover:scale-110"
-        >
-          <FaEnvelope />
-        </a>
+  href="mailto:notkaranrk@gmail.com"
+  className="text-white text-2xl hover:text-red-400 transition-transform hover:scale-110"
+>
+  <FaEnvelope />
+</a>
+
       </div>
 
       {/* ✅ Resume Buttons */}
