@@ -3,7 +3,8 @@ import Typewriter from "typewriter-effect";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import profileImg from "../assets/images/propic.png"; // ✅ Your Profile Image
 
-const resumePath = "https://karan-rk.github.io/portfolio/KaranRajendraResume.pdf";
+const resumePath = "https://karan-rk.github.io/portfolio/public/KaranRajendraResume.pdf";
+
 const githubResumeURL = "https://raw.githubusercontent.com/karan-rk/portfolio/main/public/KaranRajendraResume.pdf";
 
 
