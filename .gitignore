@@ -1,1 +1,5 @@
-node_modules
+# Ignore build directory
+/build/
+
+# Also ignore node_modules if it's not already there
+node_modules/
