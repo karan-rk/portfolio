@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCode, FaDatabase, FaTools, FaServer } from "react-icons/fa";
+import { FaCode, FaDatabase, FaTools, FaServer, FaCloud } from "react-icons/fa";
 
 const skills = [
   {
@@ -10,24 +10,29 @@ const skills = [
   {
     category: "Frameworks & Libraries",
     icon: <FaServer size={28} className="text-green-500" />,
-    items: ["React.js", "Node.js", "Flask", "OpenCV"],
+    items: ["React.js", "Node.js", "Express.js", "Flask", "OpenCV", "TensorFlow"],
   },
   {
     category: "Databases",
     icon: <FaDatabase size={28} className="text-red-500" />,
-    items: ["MySQL", "PostgreSQL", "MongoDB"],
+    items: ["MySQL", "PostgreSQL", "MongoDB", "DynamoDB"],
+  },
+  {
+    category: "Cloud & DevOps",
+    icon: <FaCloud size={28} className="text-purple-500" />,
+    items: ["AWS (EC2, S3, Lambda)", "Docker", "Kubernetes", "Kafka", "CI/CD (GitHub Actions)"],
   },
   {
     category: "Tools & Platforms",
     icon: <FaTools size={28} className="text-yellow-500" />,
-    items: ["Git", "Docker", "AWS", "Kafka"],
+    items: ["Git", "Linux", "JIRA", "Postman", "Nginx"],
   },
 ];
 
 const Skills = () => {
   return (
     <section id="skills" className="py-12 px-6 bg-gray-900 text-white">
-      <h2 className="text-4xl font-bold text-center text-blue-400 mb-10">Skills</h2>
+      <h2 className="text-4xl font-bold text-center text-blue-400 mb-10">🛠 Skills</h2>
       
       <div className="max-w-5xl mx-auto space-y-8">
         {skills.map((skillSet, index) => (

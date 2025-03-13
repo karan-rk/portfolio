@@ -4,48 +4,36 @@ import { FaCheckCircle } from "react-icons/fa";
 
 // ✅ Import Images Correctly
 import impavidLogo from "../assets/images/impavid.png";
-import techcitiLogo from "../assets/images/techciti.png";
 import sbuLogo from "../assets/images/sbu.png";
 
 const experiences = [
+  {
+    role: "Graduate Teaching Assistant",
+    company: "Stony Brook University",
+    location: "New York, USA",
+    duration: "Aug 2024 - Present",
+    description: [
+      "Teaching Assistant for ESE 568 (Computer Vision) under Prof. Murali Subbarao, guiding graduate students in advanced computer vision concepts.",
+      "Conducted weekly office hours, mentoring students on Python, OpenCV, and image processing techniques for coursework and projects.",
+      "Designed and graded assignments focused on stereo vision, augmented reality, and deep learning applications in computer vision.",
+      "Provided debugging support and optimized student code to improve efficiency and adherence to best software engineering practices.",
+    ],
+    logo: sbuLogo,
+  },
   {
     role: "Software Developer",
     company: "Impavid Technologies",
     location: "Bangalore, India",
     duration: "Sept 2022 - April 2023",
     description: [
-      "Developed a full-stack web application using JavaScript, HTML, CSS (Frontend) and Node.js, Express, MongoDB (Backend), reducing page load time by 30%.",
-      "Designed and optimized RESTful APIs, improving data retrieval speed by 25% and reducing server response time.",
-      "Refactored front-end architecture with modular React components, accelerating development cycles by 40%.",
-      "Implemented authentication using JWT & OAuth, enhancing security and reducing unauthorized access risks.",
-      "Integrated MongoDB and MySQL for structured and unstructured data handling, optimizing database queries by 20%.",
+      "Developed a scalable full-stack web application using **React.js, Node.js, Express, and MongoDB**, enhancing system performance by 40%.",
+      "Implemented **JWT-based authentication** and OAuth 2.0 to ensure secure user access and data protection.",
+      "Optimized **backend APIs and database queries**, reducing server response time by 25% and improving data retrieval efficiency.",
+      "Designed a **role-based access control system**, allowing granular permission management for different user levels.",
+      "Refactored the **React.js frontend architecture** into reusable, modular components, speeding up development time by 50%.",
+      "Integrated AWS S3 for cloud-based file storage, improving reliability and scalability.",
     ],
     logo: impavidLogo,
-  },
-  {
-    role: "Software Engineer Intern",
-    company: "TechCiti Software",
-    location: "Bangalore, India",
-    duration: "Oct 2020 - Dec 2020",
-    description: [
-      "Developed a JavaScript-based payroll application using React.js (Frontend) and Node.js/Express (Backend), reducing load time by 20% and enhancing user experience.",
-      "Designed and implemented a MySQL database schema for payroll processing, improving data accessibility by 30% and streamlining financial reporting.",
-      "Optimized SQL queries and indexing, reducing database retrieval time by 40% and boosting system performance by 35%.",
-      "Integrated REST APIs for automated payroll data management, improving processing efficiency and accuracy.",
-    ],
-    logo: techcitiLogo,
-  },
-  {
-    role: "Graduate Teaching Assistant",
-    company: "Stony Brook University",
-    location: "New York, USA",
-    duration: "Aug 2024 - Dec 2024",
-    description: [
-      "Conducted weekly coding sessions for 40+ graduate students, providing guidance on Python, OpenCV, and Machine Learning concepts.",
-      "Designed programming assignments and projects in computer vision, improving student understanding of image processing and object detection.",
-      "Evaluated and debugged student code, providing structured feedback to improve efficiency and best practices in Python development.",
-    ],
-    logo: sbuLogo,
   },
 ];
 

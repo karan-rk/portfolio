@@ -56,7 +56,7 @@ const Home = () => {
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/karanrajendra"
+          href="https://github.com/karan-rk"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white text-2xl hover:text-gray-400 transition-transform hover:scale-110"

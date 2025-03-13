@@ -11,9 +11,9 @@ const projects = [
   {
     title: "Infectious Disease Simulation Model",
     description:
-      "Designed and implemented a C++ simulation model using OOP principles, processing a population of 300,000 with an optimized O(n log n) approach.",
+      "Developed a high-performance disease spread simulation using C++ and OOP principles, processing 300,000+ agents with O(n log n) efficiency.",
     details:
-      "This project simulates the spread of infectious diseases using mathematical models like SIR and SEIR. It processes large datasets efficiently and includes real-time visualization tools for analyzing trends.",
+      "This project models real-world disease transmission using SIR and SEIR frameworks. Features include high-speed data processing, dynamic visualization, and optimized algorithms to track infection trends in large populations.",
     techStack: ["C++", "OOP", "Data Structures", "Python (Visualization)"],
     link: "https://github.com/karan-rk/infectious-disease-simulator",
     image: infectiousImage,
@@ -22,9 +22,9 @@ const projects = [
   {
     title: "COVID-19 Detection from X-Rays",
     description:
-      "Built a deep learning model using CNNs to classify COVID-19 from chest X-rays, achieving 98.7% accuracy. Deployed with Flask API for real-time analysis.",
+      "Designed and trained a deep learning model (CNN) for detecting COVID-19 from X-rays, achieving 98.7% accuracy and real-time classification.",
     details:
-      "Utilized Convolutional Neural Networks (CNNs) to analyze X-ray images and detect COVID-19 cases. Compared multiple deep learning architectures and optimized hyperparameters for better accuracy.",
+      "This AI-powered system uses Convolutional Neural Networks (CNNs) to classify COVID-19 cases from chest X-rays. Leveraging TensorFlow and Flask, the model allows real-time diagnosis via a REST API, aiding medical professionals in rapid decision-making.",
     techStack: ["Python", "TensorFlow", "CNN", "Flask"],
     link: "https://github.com/karan-rk/COVID-19-Detection-from-X-Rays.git",
     researchPaper:
@@ -35,9 +35,9 @@ const projects = [
   {
     title: "Bus Ticket Management System",
     description:
-      "Developed and launched a Bus Ticket Management System using PHP and MySQL, automating ticketing across 15 routes and improving customer satisfaction by 25%.",
+      "Engineered a full-stack Bus Ticket Management System, automating ticketing operations for 15+ routes and improving processing efficiency by 25%.",
     details:
-      "A full-stack web application that allows users to book bus tickets online. Features include secure online payments, QR verification for ticket validation, and optimized database queries for fast lookups.",
+      "Built a PHP-MySQL web application enabling users to book bus tickets securely. Integrated QR-based verification for authentication, optimized SQL queries for fast lookups, and implemented a payment gateway for seamless transactions.",
     techStack: ["PHP", "MySQL", "QR Verification", "Payment Processing"],
     link: "https://github.com/karan-rk/bus-ticket-system",
     image: busImage,
