@@ -5,6 +5,7 @@ import profileImg from "../assets/images/propic.png"; // ✅ Your Profile Image
 
 // ✅ Corrected Resume Path for GitHub Pages
 const resumePath = "https://karan-rk.github.io/portfolio/KaranRajendraResume.pdf";
+
 const githubResumeURL = "https://github.com/karan-rk/portfolio/raw/main/public/KaranRajendraResume.pdf"; // Fallback URL
 
 const Home = () => {
