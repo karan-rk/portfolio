@@ -1,4 +1,5 @@
 {
+  "homepage": "https://karan-rk.github.io/portfolio/",
   "name": "myportfolio",
   "version": "1.0.0",
   "description": "My Portfolio Website",
@@ -6,6 +7,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test"
   },
   "keywords": [],
@@ -15,12 +18,13 @@
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.4.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "react-modal": "^3.16.3",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.2",
+    "react-simple-typewriter": "^5.0.1",
     "typewriter-effect": "^2.21.0"
   },
   "browserslist": {
@@ -39,6 +43,7 @@
     "@tailwindcss/postcss": "^4.0.6",
     "@tailwindcss/postcss7-compat": "^2.2.17",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.2",
     "postcss-loader": "^8.1.1",
     "tailwindcss": "^4.0.6"

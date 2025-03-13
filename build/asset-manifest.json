@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.67af4d8f.css",
+    "main.js": "/portfolio/static/js/main.db9d630a.js",
+    "static/media/rk.webp": "/portfolio/static/media/rk.693e6841138484251c90.webp",
+    "static/media/propic.png": "/portfolio/static/media/propic.30d51c3616e2f59dd5bb.png",
+    "static/media/sbu.png": "/portfolio/static/media/sbu.5a73d1e2713ecd909e86.png",
+    "static/media/infectious.jpg": "/portfolio/static/media/infectious.156cc1022da3fa7e159e.jpg",
+    "static/media/techciti.png": "/portfolio/static/media/techciti.bc2e128ba14a1264fb5c.png",
+    "static/media/impavid.png": "/portfolio/static/media/impavid.bdcf027abde51af49f11.png",
+    "static/media/buw.png": "/portfolio/static/media/buw.0fe7d9c7ebe8d417c3c7.png",
+    "static/media/covid19.jpeg": "/portfolio/static/media/covid19.a5e3744be21d48610545.jpeg",
+    "index.html": "/portfolio/index.html",
+    "main.67af4d8f.css.map": "/portfolio/static/css/main.67af4d8f.css.map",
+    "main.db9d630a.js.map": "/portfolio/static/js/main.db9d630a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67af4d8f.css",
+    "static/js/main.db9d630a.js"
+  ]
+}
