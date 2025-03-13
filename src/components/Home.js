@@ -48,7 +48,7 @@ const Home = () => {
       {/* ✅ Social Media Icons */}
       <div className="mt-4 flex gap-6">
         <a
-          href="https://www.linkedin.com/in/karanrajendra"
+          href="https://www.linkedin.com/in/karanr3/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white text-2xl hover:text-blue-400 transition-transform hover:scale-110"
