@@ -65,11 +65,12 @@ const Home = () => {
           <FaGithub />
         </a>
         <a
-  href="mailto:notkaranrk@gmail.com"
+  href="mailto:notkaranrk@gmail.com?subject=Hello&body=I would like to connect with you"
   className="text-white text-2xl hover:text-red-400 transition-transform hover:scale-110"
 >
   <FaEnvelope />
 </a>
+
 
       </div>
 
