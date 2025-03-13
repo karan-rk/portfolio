@@ -3,10 +3,9 @@ import Typewriter from "typewriter-effect";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import profileImg from "../assets/images/propic.png"; // ✅ Your Profile Image
 
-// ✅ Corrected Resume Path for GitHub Pages
 const resumePath = "https://karan-rk.github.io/portfolio/KaranRajendraResume.pdf";
+const githubResumeURL = "https://raw.githubusercontent.com/karan-rk/portfolio/main/public/KaranRajendraResume.pdf";
 
-const githubResumeURL = "https://github.com/karan-rk/portfolio/raw/main/public/KaranRajendraResume.pdf"; // Fallback URL
 
 const Home = () => {
   return (
