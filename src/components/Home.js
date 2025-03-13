@@ -71,27 +71,28 @@ const Home = () => {
         </a>
       </div>
 
-      {/* ✅ Resume Buttons - Fully Fixed with Fallback Handling */}
-      <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
-        {/* 📄 View Resume */}
-        <a
-          href={resumePath}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all flex items-center justify-center w-64"
-        >
-          📄 View My Resume
-        </a>
+      {/* ✅ Resume Buttons */}
+<div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
+  {/* 📄 View Resume */}
+  <a
+    href={`${resumePath}?v=${new Date().getTime()}`} // Force fresh load
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all flex items-center justify-center w-64"
+  >
+    📄 View My Resume
+  </a>
 
-        {/* ⬇️ Download Resume */}
-        <a
-          href={resumePath}
-          download="KaranRajendraResume.pdf"
-          className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition-all flex items-center justify-center w-64"
-        >
-          ⬇️ Download My Resume
-        </a>
-      </div>
+  {/* ⬇️ Download Resume */}
+  <a
+    href={`${resumePath}?v=${new Date().getTime()}`} // Force fresh load
+    download="KaranRajendraResume.pdf"
+    className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition-all flex items-center justify-center w-64"
+  >
+    ⬇️ Download My Resume
+  </a>
+</div>
+
     </section>
   );
 };
