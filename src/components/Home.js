@@ -3,6 +3,10 @@ import Typewriter from "typewriter-effect";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import profileImg from "../assets/images/propic.png"; // ✅ Your Profile Image
 
+const resumePath = "/KaranRajendraResume.pdf"; // ✅ Ensure it's in the public/ folder
+const githubResumeURL =
+  "https://github.com/karan-rk/portfolio/raw/main/public/KaranRajendraResume.pdf"; // ✅ GitHub fallback link
+
 const Home = () => {
   return (
     <section
@@ -14,7 +18,7 @@ const Home = () => {
         minHeight: "100vh",
       }}
     >
-      {/* ✅ Profile Image - Bigger & Better Styling */}
+      {/* ✅ Profile Image */}
       <img
         src={profileImg}
         alt="Karan Rajendra"
@@ -66,24 +70,49 @@ const Home = () => {
         </a>
       </div>
 
-      {/* ✅ Resume Buttons - Styled with Smooth Hover Effects */}
+      {/* ✅ Resume Buttons - Styled & Debugged */}
       <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
-        
         {/* 📄 View Resume */}
         <a
-          href="/KaranRajendraResume.pdf"
+          href={resumePath}
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all flex items-center justify-center w-64"
+          onClick={async (e) => {
+            try {
+              const res = await fetch(resumePath, { method: "HEAD" });
+              if (!res.ok) {
+                alert("Resume not found! Trying alternative link...");
+                window.open(githubResumeURL, "_blank");
+                e.preventDefault();
+              }
+            } catch {
+              alert("Error fetching resume.");
+              e.preventDefault();
+            }
+          }}
         >
           📄 View My Resume
         </a>
 
         {/* ⬇️ Download Resume */}
         <a
-          href="/KaranRajendraResume.pdf"
+          href={resumePath}
           download="KaranRajendraResume.pdf"
           className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition-all flex items-center justify-center w-64"
+          onClick={async (e) => {
+            try {
+              const res = await fetch(resumePath, { method: "HEAD" });
+              if (!res.ok) {
+                alert("Resume not found! Downloading from alternative link...");
+                window.location.href = githubResumeURL;
+                e.preventDefault();
+              }
+            } catch {
+              alert("Error downloading resume.");
+              e.preventDefault();
+            }
+          }}
         >
           ⬇️ Download My Resume
         </a>
