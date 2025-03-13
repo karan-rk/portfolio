@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import profileImg from "../assets/images/propic.png"; // ✅ Your Profile Image
 
 // ✅ Corrected Resume Path for GitHub Pages
-const resumePath = "https://karan-rk.github.io/portfolio/KaranRajendraResume_v2.pdf";
+const resumePath = "https://karan-rk.github.io/portfolio/KaranRajendraResume.pdf";
 
 const githubResumeURL = "https://raw.githubusercontent.com/karan-rk/portfolio/main/KaranRajendraResume.pdf";
 
